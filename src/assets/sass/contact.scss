@@ -18,7 +18,7 @@
 	}
 
 	#cs-contact {
-		font-family: "Roboto", "Arial", sans-serif;
+		font-family: "urbane", sans-serif;
 		padding: var(--sectionPadding);
 
 		.cs-container {
@@ -53,6 +53,7 @@
 		}
 
 		#cs-form {
+			font-family: "urbane", sans-serif;
 			margin-bottom: calc(40 / 16 * 1rem);
 			label {
 				font-size: calc(16 / 16 * 1rem);
@@ -74,6 +75,7 @@
 
 			input,
 			textarea {
+				font-family: "urbane", sans-serif;
 				font-size: calc(16 / 16 * 1rem);
 				width: 100%;
 				height: calc(64 / 16 * 1rem);
@@ -97,6 +99,7 @@
 			}
 
 			.cs-button-solid {
+				font-family: "urbane", sans-serif;
 				width: 100%;
 				border: none;
 			}

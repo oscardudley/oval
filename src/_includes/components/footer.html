@@ -5,10 +5,7 @@
 <footer id="footer">
     <div class="container">
         <div class="left-section">
-            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/svgs/logo-white.svg" alt="logo" width="264" height="78"></a>
-            <p>
-                Extra content if you need it, if not you can delete this whole p tag. I usually do.
-            </p>
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/svgs/oval-white-vector.svg" alt="logo" width="264" height="78"></a>
         </div>
         <div class="right-section">
             <div class="lists">
@@ -48,9 +45,8 @@
                     <li>
                         <a href="/contact">
                             {{client.address.lineOne}}<br>
-                            {{client.address.lineTwo}}<br>
-                            {{client.address.city}}
-                            {{client.address.state}}
+                            {{client.address.city}}<br>
+                            {{client.address.state}}<br>
                             {{client.address.zip}}
                         </a>
                     </li>
@@ -61,7 +57,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:{{client.email}}">Click to Email</a>
+                        <a href="mailto:{{client.email}}">{{client.email}}</a>
                     </li>
                 </ul>
             </div>
@@ -69,9 +65,10 @@
     </div>
 
     <div class="credit">
-        <span>Designed and Hand Coded by</span>
-        <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-        <span class="copyright">
-            Copyright 2023 - Present</span>
+        <span>Designed by</span>
+        <a href="/" target="_blank" rel="noopener">Evan</a>
+        <span>and developed by</span>
+        <a href="/" target="_blank" rel="noopener">Oscar</a>.
+        <span class="copyright">© Copyright 2023</span>
     </div>
 </footer>

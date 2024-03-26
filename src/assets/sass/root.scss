@@ -7,24 +7,25 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
 	// Website colors
-	:root {
-		--primary: #ffba19;
-		--primaryLight: #ffd675;
-		--secondary: #001f3f;
-		--secondaryLight: #001f3f;
-		--headerColor: #1a1a1a;
-		--bodyTextColor: #4e4b66;
-		--bodyTextColorWhite: #fafbfc;
+    :root {
+        /* Add this code to your global stylesheet that is shared on all pages of your website. These are the core styles for every Stitch and it's text content and variables.  This way, you can only need to add it once and you can copy and paste your Stitches without having to remove them from every Stitch and you can edit these styles for every single Stitch in your site all at once for easier and faster customization across the whole site */
+        --primary: #84b4bf; 
+        --primaryLight: #001F3F;
+        --secondary: #f3b407;
+        --secondaryLight: #FFBA43;
+        --headerColor: #1a1a1a;
+        --bodyTextColor: #4E4B66;
+		--bodyTextColorWhite: #FAFBFC;
 
-		/* 13px - 16px */
-		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-		/* 31px - 49px */
-		--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-		--bodyFontSize: 1rem;
+        /* 13px - 16px */
+        --topperFontSize: clamp(.8125rem, 1.6vw, 1rem);
+        /* 31px - 49px */
+        --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+        --bodyFontSize: 1rem;
 
-		/* 60px - 100px top and bottom */
-		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-	}
+        /* 60px - 100px top and bottom */
+        --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    }
 
 	// Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
 	.cs-topper {
@@ -104,29 +105,36 @@
 @media only screen and (min-width: 0em) {
 	// Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-	/* roboto-regular - latin */
+	/* urbane-light */
 	@font-face {
-		font-family: "Roboto";
+		font-family: "urbane", sans-serif;
+		font-weight: 300;
 		font-style: normal;
-		font-weight: 400;
-		src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		src: url("https://use.typekit.net/kgd8ekt.css");
 	}
-	/* roboto-700 - latin */
+
+	/* urbane-medium */
 	@font-face {
-		font-family: "Roboto";
+		font-family: "urbane", sans-serif;
+		font-weight: 500;
 		font-style: normal;
+		src: url("https://use.typekit.net/kgd8ekt.css");
+	}
+
+	/* urbane-demi-bold */
+	@font-face {
+		font-family: "urbane", sans-serif;
+		font-weight: 600;
+		font-style: normal;
+		src: url("https://use.typekit.net/kgd8ekt.css");
+	}
+
+	/* urbane-bold */
+	@font-face {
+		font-family: "urbane", sans-serif;
 		font-weight: 700;
-		src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-	/* roboto-900 - latin */
-	@font-face {
-		font-family: "Roboto";
 		font-style: normal;
-		font-weight: 900;
-		src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		src: url("https://use.typekit.net/kgd8ekt.css");
 	}
 
 	body,
@@ -134,7 +142,7 @@
 		margin: 0;
 		padding: 0;
 		font-size: 100%;
-		font-family: "Roboto", Arial, sans-serif;
+		font-family: "urbane", sans-serif;
 		color: var(--bodyTextColor);
 		overflow-x: hidden;
 	}
@@ -741,7 +749,6 @@
 @media only screen and (min-width: 64rem) {
 	#cs-navigation {
 		/* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-		font-family: "Roboto", "Arial", sans-serif;
 		width: 100%;
 		padding: 0 calc(16 / 16 * 1rem);
 		/* prevents padding from affecting height and width */
