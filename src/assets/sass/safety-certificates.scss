@@ -86,7 +86,7 @@
             width: calc(579 / 16 * 1em);
             height: calc(542 / 16 * 1em);
             /* sends it to the top of the flexbox */
-            order: -1;
+            order: 1;
             position: relative;
         }
 
@@ -277,7 +277,7 @@
             transition: background-color 0.3s;
 
             &:hover {
-                background: #1a1a1a;
+                background: var(--primary);
 
                 .cs-h3 {
                     color: var(--secondary);
