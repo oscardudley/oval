@@ -1,0 +1,128 @@
+---
+title: 'Fault Finding'
+description: 'Fault Finding'
+permalink: '/fault-finding/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/fault-finding.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Fault Finding</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/wires.png">
+            <source media="(min-width: 601px)" srcset="/assets/images/wires.png">
+            <img aria-hidden="true" decoding="async" src="/assets/images/wires.png" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-412">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Expert Diagnosis</span>
+                <h2 class="cs-title">Fault Finding Service</h2>
+                <p class="cs-text">
+                    We understand the importance of identifying and rectifying electrical faults before they escalate into more significant issues. If left unchecked, faults can lead to potential safety hazards, including electrical fires, system failures, and equipment damage. Our fault finding service is designed to provide peace of mind, ensuring your electrical systems operate safely, efficiently, and reliably.
+                </p>
+            </div>
+            <div class="cs-image-group">
+                <!--Top Left Image-->
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/safety-certificates/safety-certificates1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/safety-certificates/safety-certificates1.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/safety-certificates/safety-certificates1.jpg" alt="lighting" width="229" height="352">
+                </picture>
+                <!--Top Right Image-->
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/safety-certificates/safety-certificates3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/safety-certificates/safety-certificates3.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/safety-certificates/safety-certificates3.jpg" alt="lighting" width="390" height="352">
+                </picture>
+                <!--Bottom Image-->
+                <picture class="cs-picture cs-picture3">
+                    <source media="(max-width: 600px)" srcset="/assets/images/safety-certificates/safety-certificates2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/safety-certificates/safety-certificates2.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/safety-certificates/safety-certificates2.jpg" alt="lighting" width="649" height="227">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Quote                      -->
+    <!-- ============================================ -->
+
+    <section id="quote-560">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Review</span>
+                <p class="cs-quote">
+                    Harry came round on the same day due to an issue with power surges resulting in the supply tripping. He went through every aspect of our supply and repaired the issues swiftly.
+                </p>
+                <span class="cs-name">John A.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-1675">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Streamlined Service</span>
+                <h2 class="cs-title">Our Process</h2>
+                <p class="cs-text">
+                    From minor issues like flickering lights to more complex problems such as circuit breaker tripping or power surges, we've got you covered.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">01</span>
+                    <h3 class="cs-h3">Initial Consultation</h3>
+                    <p class="cs-item-text">
+                        Contact us to schedule an initial consultation. We’ll discuss your concerns and outline how our services can help.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">02</span>
+                    <h3 class="cs-h3">Detailed Inspection</h3>
+                    <p class="cs-item-text">
+                        Our team conducts an inspection of your electrical systems, employing diagnostic tools to identify faults accurately.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">03</span>
+                    <h3 class="cs-h3">Recommendations</h3>
+                    <p class="cs-item-text">
+                        You’ll receive a detailed report outlining any faults and our recommended course of action to rectify these issues.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">04</span>
+                    <h3 class="cs-h3">Repair</h3>
+                    <p class="cs-item-text">
+                        Should you choose to proceed, our skilled electricians will follow-up and carry out the necessary repairs.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    {% include 'components/cta.html' %}
+{% endblock %}
