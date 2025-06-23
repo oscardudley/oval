@@ -1,17 +1,14 @@
 ---
-title: 'Reviews'
+title: 'Reviews New'
 description: 'Read what our customers say about Oval Electrical. 5-star rated electrical services in Brighton & Hove. See why homeowners trust us for all their electrical needs.'
 preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'reviews/'
-eleventyNavigation:
-    key: Reviews
-    order: 300
+permalink: 'reviews-new/'
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/css/reviews.css">
+    <link rel="stylesheet" href="/css/reviews-new.css">
 {% endblock %}
 
 {% block body %}
@@ -30,97 +27,748 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--                  Reviews                     -->
+    <!--               Featured Review                -->
     <!-- ============================================ -->
 
-    <section id="reviews">
-        <div class="container">
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Harry did a number of jobs for me (moved two sockets, installed a new light fitting and replaced two very old light pendants). I can't fault the service and strongly recommend him. He was responsive, on time, polite and very tidy! Will definitely use again.
-                </p>
-                <div class="star-group">
-                    <span class="name">Chris B.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
+    <section id="featured-review">
+        <div class="cs-container">
+            <h2 class="cs-title">Featured Review</h2>
+            
+            <div class="cs-card">
+                <div class="cs-header">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    <div>
+                        <h3 class="cs-reviewer">Nicky G.</h3>
+                        <div class="cs-meta">
+                            <span class="cs-location">Brighton</span>
+                            <span class="cs-service">Socket & Lighting Installation</span>
+                        </div>
+                        <img class="cs-stars filter-secondary" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="96" height="16">
+                    </div>
                 </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Harry turned up when he said he would, explained everything clearly and carried out the work in a professional manner and the final cost of the work matched the quote.
+                
+                <blockquote class="cs-highlight">
+                    "Customer service at its best!"
+                </blockquote>
+                
+                <p class="cs-text">
+                    Harry was very professional throughout. His work was of a very high quality. Everything was left clean and tidy. He explained the work undertaken to us and was punctual on both appointments. Customer service at its best. We will definitely recommend and also have him for further jobs.
                 </p>
-                <div class="star-group">
-                    <span class="name">Pat M.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
+                
+                <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote" width="80" height="77">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Review Filters                -->
+    <!-- ============================================ -->
+    <!--
+    <section id="reviews-filters">
+        <div class="cs-container">
+            <div class="cs-buttons">
+                <button class="cs-button cs-active" data-filter="all">All Reviews</button>
+                <button class="cs-button" data-filter="installation">Installations</button>
+                <button class="cs-button" data-filter="fault">Fault Finding</button>
+                <button class="cs-button" data-filter="lighting">Lighting</button>
+                <button class="cs-button" data-filter="certificate">Certificates</button>
+                <button class="cs-button" data-filter="rewire">Rewiring</button>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <section id="statistics">
+        <div class="cs-container">
+            <h2 class="cs-divider-title">Customer Reviews</h2>
+            <p class="cs-divider-text">See why customers across Brighton & Hove trust Oval Electrical</p>
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                 Reviews Grid                 -->
+    <!-- ============================================ -->
+
+    <section id="reviews-grid">
+        <div class="cs-container">
+            <div class="cs-grid">
+                <!-- Review 32 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Jennifer N.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Super work!"
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry is great, really friendly and carries out super work. He came highly recommended by our neighbours and you could see why. I would recommend him to anyone needing electrical work.
+                    <span class="cs-date" data-date="2025-06-02">3 weeks ago</span>
                 </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Harry has done several jobs for us now. He has done a lovely job both times, very tidy. Highly recommended.
-                </p>
-                <div class="star-group">
-                    <span class="name">Steven D.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
+                <!-- Review 31 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Kathy B.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Very personable service."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Very personable service. Was easy to get hold of and turned up on time. Everything done to a good standard.
+                    <span class="cs-date" data-date="2025-05-26">A month ago</span>
                 </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Harry fitted a new extractor and mended some ceiling spot lights, wonderful job, carried out in a timely and efficient manner highly recommend!
-                </p>
-                <div class="star-group">
-                    <span class="name">Vanessa H.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
+                <!-- Review 30 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Simon L.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Found and fixed the problem quickly."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Booked Harry in to diagnose tripping RCD. Arrived when promised; found and fixed the problem quickly; and charged very reasonable fee. Recommended.
+                    <span class="cs-date" data-date="2025-05-21">A month ago</span>
                 </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Swift and professional service!
-                </p>
-                <div class="star-group">
-                    <span class="name">Joseph L.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
+                <!-- Review 29 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Susan B.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Excellent service from Harry."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Used Oval for the first time today. Excellent service from Harry. Will definitely come back when further work needed.
+                    <span class="cs-date" data-date="2025-04-27">2 months ago</span>
                 </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Harry came round on time and on the same day due to an issue with power surges resulting in the supply tripping on a regular basis! Harry went through every aspect of our supply and there are no more issues, at a reasonable cost. Would recommend him.
-                </p>
-                <div class="star-group">
-                    <span class="name">John A.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
+                <!-- Review 28 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Lyn C.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Quote was very reasonable."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry installed 2 outside sockets, installed a new circuit board for the garage and sorted out our kitchen plug socket that was playing up. He arrived on time, his work was neat and tidy, and his quote was very reasonable with no extras. I would strongly recommend Oval Electrical to anyone requiring electrical work carried out.
+                    <span class="cs-date" data-date="2025-04-23">2 months ago</span>
+                </div>
+                <!-- Review 27 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Stephen R.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Great job, exactly as described."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry was absolutely great, very professional, polite, good communications and did a great job exactly as described. I would whole-heartedly recommend Oval Electrical based on what they have done for me.</p>
+                    <span class="cs-date" data-date="2025-04-17">2 months ago</span>
+                </div>
+                <!-- Review 26 -->
+                <div class="cs-review" data-category="rewire">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Vic D.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Professional, reliable, trustworthy."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        I can't say enough positive things about Harry and Oval Electrical. Professional, reliable, trustworthy and does a fantastic job. We moved into an old property that needed a complete rewire and so glad that Oval Electrical were free to do the work. Thank you Harry. We are so grateful.</p>
+                    <span class="cs-date" data-date="2025-03-27">3 months ago</span>
+                </div>
+                <!-- Review 25 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Claire B.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Very tidy."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Great work, very tidy, highly recommend.</p>
+                    <span class="cs-date" data-date="2025-03-23">3 months ago</span>
+                </div>
+                <!-- Review 24 -->
+                <div class="cs-review" data-category="fault">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Naru G.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Effective and rapid service indeed."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Tuesday: Asked for help with a damaged electrical socket. Wednesday: Harry comes around and fixes the socket for a very competitive price! Thursday: I write a review about his efficient and professional service which has meant my non-emergency electrical issue was fixed in 24 hours of calling him up. Effective and rapid service indeed.</p>
+                    <span class="cs-date" data-date="2025-03-17">3 months ago</span>
+                </div>
+                <!-- Review 23 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Agata U.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Fair price!"
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Fantastic service, job done very quickly, fair price. Highly recommended!</p>
+                    <span class="cs-date" data-date="2025-03-15">3 months ago</span>
+                </div>
+                <!-- Review 22 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Neil W.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Always on time!"
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Have used Harry twice. Always on time, tidy, amiable, and reasonably priced. Would highly recommend.</p>
+                    <span class="cs-date" data-date="2025-03-12">3 months ago</span>
+                </div>
+                <!-- Review 21 -->
+                <div class="cs-review" data-category="lighting">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Alison E.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "He was polite and friendly."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry from Oval Electrical fitted a new kitchen light, light switch and an upgraded bathroom extractor fan. He arrived on time, discussed what was needed and went to buy the fittings, returning to fit them the same day. He was polite and friendly and I would happily recommend him or use him again myself.</p>
+                    <span class="cs-date" data-date="2025-01-27">4 months ago</span>
+                </div>
+                <!-- Review 20 -->
+                <div class="cs-review" data-category="fault">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Mischa H.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Most impressive is the communication proficiency."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Oval was the sixth trades company I had contacted for a year-long electrical problem. Very pleased with the work - all done promptly, neatly, and kept to the initial budget. Also, Harry was innovative in solutions of tricky spots in a difficult space. Most impressive also is the communication proficiency, you receive prompt answers to requests and queries, and that is a gift.</p>
+                    <span class="cs-date" data-date="2025-01-20">5 months ago</span>
+                </div>
+                <!-- Review 19 -->
+                <div class="cs-review" data-category="certificate">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">David J.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Will definitely use again."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Friendly and efficient, will definitely use again.</p>
+                    <span class="cs-date" data-date="2024-11-05">7 months ago</span>
+                </div>
+                <!-- Review 18 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Bonita W.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Pleasant and efficient."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Great service from Harry. Pleasant and efficient. Pleased with quality of work.</p>
+                    <span class="cs-date" data-date="2024-11-01">7 months ago</span>
+                </div>
+                <!-- Review 17 -->
+                <div class="cs-review" data-category="fault">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Charlotte R.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Tidy, quick and professional."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Fantastic! Tidy, quick and professional. Highly recommend and will use again.</p>
+                    <span class="cs-date" data-date="2024-10-20">8 months ago</span>
+                </div>
+                <!-- Review 16 -->
+                <div class="cs-review" data-category="fault">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Hannah C.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Found our issue!"
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Great, thank you. Easy to arrange a convenient time and found our issue after lots of problem solving.</p>
+                    <span class="cs-date" data-date="2024-10-10">8 months ago</span>
+                </div>
+                <!-- Review 15 -->
+                <div class="cs-review" data-category="fault">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Roger M.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "I thoroughly recommend him."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        I had an intermittent electrical fault that was difficult to identify. Harry tested all possible electrical parts that could have caused the problem. He then renewed some electrical components. Impossible to identify what was causing the problem, but now appears to be fixed. Well done Harry! I thoroughly recommend him.</p>
+                    <span class="cs-date" data-date="2024-09-20">9 months ago</span>
+                </div>
+                <!-- Review 14 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Martin B.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Always on time."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Highly recommend Harry for any electrical jobs. I’ve used him several times. Always on time and courteous.</p>
+                    <span class="cs-date" data-date="2024-09-15">9 months ago</span>
+                </div>
+                <!-- Review 13 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Joel K.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Harry went out of his way to accommodate us."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry was brilliant! From start to finish, Harry left our house clean and tidy, he worked extremely efficiently and kept us up to date with his progress. We needed an electrician very quickly after being let down and Harry went out of his way to accommodate the work we needed completing. We would highly recommend anyone to use Harry and Oval Electrical!</p>
+                    <span class="cs-date" data-date="2024-08-25">10 months ago</span>
+                </div>
+                <!-- Review 12 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Esther B.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Left everywhere clean and tidy."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Would definitely recommend Harry at Oval Electrical. He installed a night storage heater and changed an outside light. He was able to fit us in quickly, worked efficiently, and left everywhere clean and tidy. Excellent work, thank you Harry.</p>
+                    <span class="cs-date" data-date="2024-08-20">10 months ago</span>
+                </div>
+                <!-- Review 11 -->
+                <div class="cs-review" data-category="lighting">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Karen W.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Courteous from first contact."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry was great - he relocated and replaced an outside light for us. He was courteous from first contact, worked very efficiently and tidied up when he had finished! Would recommend.</p>
+                    <span class="cs-date" data-date="2024-08-15">10 months ago</span>
+                </div>
+                <!-- Review 10 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Michael M.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Excellent service, will use again."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Supplied and fitted replacement consumer unit and other minor jobs. Excellent service, will use again.</p>
+                    <span class="cs-date" data-date="2024-07-25">11 months ago</span>
+                </div>
+                <!-- Review 9 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Anna C.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Worked very efficiently."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Was prompt to reply, worked very efficiently to help fix a number of things we had on our 'to do' list at our house - thank you.</p>
+                    <span class="cs-date" data-date="2024-07-18">11 months ago</span>
+                </div>
+                <!-- Review 8 -->
+                <div class="cs-review" data-category="fault">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Julie G.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Courteous and arrived on time."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Can't thank Harry enough. Came to see problem and advised on what to do next. Courteous and arrived on time. Will recommend to my friends.
+                    </p>
+                    <span class="cs-date" data-date="2024-07-11">11 months ago</span>
+                </div>
+                <!-- Review 7 -->
+                <div class="cs-review" data-category="fault">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Philip H.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "He's definitely 'my' electrician now!"
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry understood all of my concerns then did a great job. It was completed in good time and looks very neat. While he was there, I showed him something my previous electrician had struggled with and he put it right on the spot. He's definitely 'my' electrician now!
+                    </p>
+                    <span class="cs-date" data-date="2024-07-01">11 months ago</span>
+                </div>
+                
+                <!-- Review 6 -->
+                <div class="cs-review" data-category="lighting">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">June H.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "I would most certainly recommend Harry of Oval Electrical."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        He came today and fitted an outside light, renewed a porch light and replaced a power point. His manner was polite, he didn’t hang around getting on with the work and left everywhere clean and tidy. I believe his pricing to be very fair and will have no reservation in using him again.
+                    </p>
+                    <span class="cs-date" data-date="2024-06-11">A year ago</span>
+                </div>
+                <!-- Review 5 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Andy W.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Harry was very knowledgeable."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        As a plumber, I often get asked if I know any electricians. I send them Harry's way! Harry has done work for my parents and was very efficient and did a great job! Harry was very knowledgeable and all at a fair price.
+                    </p>
+                    <span class="cs-date" data-date="2024-05-20">A year ago</span>
+                </div>
+                <!-- Review 4 -->
+                <div class="cs-review" data-category="lighting">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Vanessa H.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Wonderful job, carried out in a timely and efficient manner!"
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry fitted a new extractor and mended some ceiling spot lights, wonderful job, carried out in a timely and efficient manner - highly recommend!
+                    </p>
+                    <span class="cs-date" data-date="2024-05-07">A year ago</span>
+                </div>
+                <!-- Review 3 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Steven D.</h3>
+                        </div>
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "Lovely job both times, very tidy."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry has done several jobs for us now. He has done a lovely job both times, very tidy. Highly recommended.
+                    </p>
+                    <span class="cs-date" data-date="2024-03-29">A year ago</span>
+                </div>
+                <!-- Review 2 -->
+                <div class="cs-review" data-category="installation">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Chris B.</h3>
+                        </div>
+                        
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "I can't fault the service."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry did a number of jobs for me (moved two sockets, installed a new light fitting and replaced two very old light pendants). I can't fault the service and strongly recommend him. He was responsive, on time, polite and very tidy! Will definitely use again.
+                    </p>
+                    <span class="cs-date" data-date="2024-03-10">A year ago</span>
+                </div>
+                <!-- Review 1 -->
+                <div class="cs-review" data-category="certificate">
+                    <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="80" height="80">
+                    
+                    <div class="cs-header">
+                        <div class="cs-reviewer-info">
+                            <h3 class="cs-reviewer">Pat M.</h3>
+                        </div>
+                        
+                        <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="80" height="16">
+                    </div>
+                    
+                    <blockquote class="cs-highlight">
+                        "The final cost of the work matched the quote."
+                    </blockquote>
+                    
+                    <p class="cs-text">
+                        Harry turned up when he said he would, explained everything clearly and carried out the work in a professional manner and the final cost of the work matched the quote.
+                    </p>
+                    <span class="cs-date" data-date="2024-03-01">A year ago</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+    /*
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all filter buttons and reviews
+        const filterButtons = document.querySelectorAll('.cs-button');
+        const reviews = document.querySelectorAll('.cs-review');
+        
+        // Add click event to each filter button
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('cs-active'));
+                
+                // Add active class to clicked button
+                this.classList.add('cs-active');
+                
+                // Get the filter value
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Show/hide reviews based on filter
+                reviews.forEach(review => {
+                    if (filterValue === 'all') {
+                        review.style.display = 'block';
+                    } else {
+                        if (review.getAttribute('data-category') === filterValue) {
+                            review.style.display = 'block';
+                        } else {
+                            review.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    });
+    */
+    document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.cs-date[data-date]').forEach(el => {
+        const reviewDate = new Date(el.dataset.date);
+        const now = new Date();
+        const days = Math.floor((now - reviewDate) / (1000 * 60 * 60 * 24));
+        
+        let text;
+        if (days < 7) text = 'This week';
+        else if (days < 14) text = 'Last week'; 
+        else if (days < 30) text = Math.floor(days/7) + ' weeks ago';
+        else if (days < 60) text = 'Last month';
+        else if (days < 90) text = '2 months ago';
+        else if (days < 120) text = '3 months ago';
+        else if (days < 365) text = Math.floor(days/30) + ' months ago';
+        else text = Math.floor(days/365) + ' year' + (Math.floor(days/365) > 1 ? 's' : '') + ' ago';
+        
+        el.textContent = text;
+    });
+});
+</script>
 
     {% include 'components/cta.html' %}
 
