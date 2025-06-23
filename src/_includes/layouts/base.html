@@ -1,5 +1,3 @@
-<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,13 +45,7 @@
     <script defer src="/assets/js/dark.js"></script>
     {% block head %}{% endblock %}
 
-    <!--For home page, use service keywords for the title, including location for SEO.
-        Other pages should just include the page name.
-        
-        EXAMPLE:
-        Home page - House Painting Contractors | Painters and Co. | TestCity, WA
-        About Page - About us | Painters and Co.
-        -->
+
     <title>
       {% if page.url == '/'%}
         {{ title }}
